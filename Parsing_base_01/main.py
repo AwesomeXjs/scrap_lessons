@@ -1,16 +1,16 @@
 
 
 # pip install beautifulsoup4 lxml
-from bs4 import BeautifulSoup
-import requests
-import re
+# from bs4 import BeautifulSoup
+# import requests
+# import re
 
 
-with open('bolvanka/index.html') as file:
-    src = file.read()
+# with open('bolvanka/index.html') as file:
+#     src = file.read()
 
 
-soup = BeautifulSoup(src, 'lxml')
+# soup = BeautifulSoup(src, 'lxml')
 
 
 # ДЛЯ КИРИЛЛИЦЫ
@@ -116,7 +116,7 @@ soup = BeautifulSoup(src, 'lxml')
 
 # print(re_search)
 # чтобы поиск выполнялся в разных регистрах:
-re_search = soup.find_all(string=re.compile('([Оо]дежда)'))
-print(re_search)
-re_search = soup.find_all(string=re.compile('([Aa]bout)'))
-print(re_search)
+# re_search = soup.find_all(string=re.compile('([Оо]дежда)'))
+# print(re_search)
+# re_search = soup.find_all(string=re.compile('([Aa]bout)'))
+# print(re_search)
